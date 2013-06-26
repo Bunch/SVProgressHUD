@@ -49,7 +49,9 @@ typedef NSUInteger SVProgressHUDMaskType;
 
 // stops the activity indicator, shows a glyph + status, and dismisses HUD 1s later
 + (void)showSuccessWithStatus:(NSString*)string;
++ (void)showSuccessWithStatus:(NSString *)string duration:(NSTimeInterval)displayInterval;
 + (void)showErrorWithStatus:(NSString *)string;
++ (void)showErrorWithStatus:(NSString *)string duration:(NSTimeInterval)displayInterval;
 + (void)showImage:(UIImage*)image status:(NSString*)status; // use 28x28 white pngs
 
 + (void)popActivity;
