@@ -147,6 +147,10 @@ CGFloat SVProgressHUDRingThickness = 6;
     [[self sharedView] showImage:image status:string duration:displayInterval];
 }
 
++ (void)showImage:(UIImage *)image status:(NSString *)status duration:(NSTimeInterval)displayInterval {
+    [[self sharedView] showImage:image status:status duration:displayInterval];
+}
+
 
 #pragma mark - Dismiss Methods
 
